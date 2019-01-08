@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <link type="text/css" media="print" rel="stylesheet" href="print.css">
+
+    <style>
+
+      :root {
+        --space-sm: 16px;
+        --space-md: 32px;
+        --space-lg: 64px;
+
+        --fontSize-N1: 12px;
+        --lineHeight-N1: 16px;
+        
+        --fontSize-0: 16px;
+        --lineHeight-0: 22px;
+
+        --fontSize-1: 24px;
+        --lineHeight-1: 32px;
+        
+        --dimmed: 0.6;
+      }
+
+      * {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      .pagebreak {
+        page-break-before: always;
+      }
+   
+      @page {
+        size: A4;
+      }
+      
+      body {
+        margin: 0;
+        padding: 0 var(--space-lg) var(--space-lg) var(--space-lg);
+        font-size: var(--fontSize-0);
+        line-height: var(--lineHeight-0);
+        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+        color: #444;
+      }
+      @media screen and (max-width: 720px) {
+        body {
+          padding: 0 var(--space-md) var(--space-md) var(--space-md);
+        }
+      }
+      h1, h2, h3, h4, h5, h5, p {
+        margin: 0;
+      }
+      h1, h2, h3, h4, h5, h5 {
+        font-weight: 600;
+      }
+      a, a:visited {
+        color: inherit;
+        text-decoration-color: rgba(0,0,0,.3);
+      }
+      .textsize-N1 {
+        font-size: var(--fontSize-N1);
+        line-height: var(--lineHeight-N1);
+      }
+      .textsize-0 {
+        font-size: var(--fontSize-0);
+        line-height: var(--lineHeight-0);
+      }
+      .textsize-1 {
+        font-size: var(--fontSize-1);
+        line-height: var(--lineHeight-1);
+      }
+      .section-title {
+        font-size: var(--fontSize-0);
+        line-height: var(--lineHeight-0);
+      }
+      .subsection-title {
+        font-size: var(--fontSize-1);
+        line-height: var(--lineHeight-1);
+      }
+      .layout {
+        display: grid;
+        grid-template-columns: 128px auto;
+        grid-gap: var(--space-md) 0px;
+      }
+      @media screen and (max-width: 720px) {
+        .layout {
+          grid-template-columns: auto;
+          grid-gap: var(--space-sm) 0px;
+        }
+      }
+      @media screen and (max-width: 720px) {
+        .hide-sm {
+          display: none;
+        }
+      }
+      .layout-left {
+
+      }
+      .layout-right {
+        grid-column-start: 2;
+        max-width: 400px;
+      }
+      @media screen and (max-width: 720px) {
+        .layout-right {
+          grid-column-start: 1;
+          max-width: 100%;
+        }
+      }
+      .subsection-title {
+        margin-bottom: var(--space-sm);
+      }
+      .section {
+        padding-top: var(--space-lg);
+      }
+      .section-title {
+        text-transform: uppercase;
+        font-size: var(--fontSize-N1);
+        line-height: var(--lineHeight-N1);
+        letter-spacing: .05em;
+      }
+      .project-description {
+        opacity: var(--dimmed);
+      }
+      .project-role {
+        opacity: var(--dimmed);
+      }
+
+    </style>
+  </head>
+  <body>
+    
+    <div class="section">
+      <div class="layout">
+        <div class="layout-left">
+          CV &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/
+        </div>
+        <div class="layout-right">
+          <b>Hayk Ananyan</b>
+          <br>
+          <br>
+          <p>
+            Born 14.11.1990 in Yerevan, Armenia.
+            <br>
+            Living in Barcelona since 2003.
+            <br>
+            <br>
+            I have been designing since 2006, focused on 
+            <br class="hide-sm">
+            modular product design and development.
+            <br>
+            <br>
+            say@hihayk.com
+            <br>
+            hihayk.com
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="pagebreak"></div>
+    
+    <div class="section">
+      <div class="layout">
+        <div class="layout-right">
+          <h2 class="section-title">
+            Experience
+          </h2>
+          <h3 class="subsection-title">
+            working in-house
+          </h3>
+        </div>
+      </div>
+      
+      <div class="project-section">
+        <div class="layout">
+          <div class="layout-left">
+            <p>
+              2017 <br class='hide-sm'> — present
+            </p>
+          </div>
+          <div class="layout-right">
+            <p class="project-title">
+              Typeform
+            </p>
+            <p class="project-description">
+              Conversational forms
+            </p>
+            <p class="project-role">
+              design systems / product design / front-end
+            </p>
+          </div>
+
+          <div class="layout-left">
+            <p>
+              2016 <br class='hide-sm'> — 2017
+            </p>
+          </div>
+          <div class="layout-right">
+            <p class="project-title">
+              Travelperk
+            </p>
+            <p class="project-description">
+              Business travel webapp
+            </p>
+            <p class="project-role">
+              design systems / product design / front-end
+            </p>
+          </div>
+
+          <div class="layout-left">
+            <p>
+              2014 <br class='hide-sm'> — 2016
+            </p>
+          </div>
+          <div class="layout-right">
+            <p class="project-title">
+              Quipu
+            </p>
+            <p class="project-description">
+              Accounting webapp
+            </p>
+            <p class="project-role">
+              product design / front-end
+            </p>
+          </div>
+
+          <div class="layout-left">
+            <p>
+              2016
+            </p>
+          </div>
+          <div class="layout-right">
+            <p class="project-title">
+              Ironhack
+            </p>
+            <p class="project-description">
+              Coding Bootcamp
+            </p>
+            <p class="project-role">
+              front-end course instructor
+            </p>
+          </div>
+
+          <div class="layout-left">
+            <p>
+              2011 <br class='hide-sm'> — 2014
+            </p>
+          </div>
+          <div class="layout-right">
+            <p class="project-title">
+              Digital Road
+            </p>
+            <p class="project-description">
+              Web and product design agency
+            </p>
+            <p class="project-role">
+              art direction / web design / front-end
+            </p>
+          </div>
+
+          <div class="layout-left">
+            <p>
+              2010 <br class='hide-sm'> — 2011
+            </p>
+          </div>
+          <div class="layout-right">
+            <p class="project-title">
+              Publlart
+            </p>
+            <p class="project-description">
+              Small print shop
+            </p>
+            <p class="project-role">
+              graphic design / print
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="section">
+      <div class="layout">
+        <div class="layout-right">
+          <h2 class="section-title">
+            Experience
+          </h2>
+          <h3 class="subsection-title">
+            personal projects
+          </h3>
+        </div>
+      </div>
+      
+      <div class="project-section">
+        <div class="layout">
+          <div class="layout-right">
+            <p>
+              I spend a lot of time working on side projects that help me to learn and experiment.
+              <br>
+              Here are some of my latest projects:
+              <br>
+              <a href="https://hihayk.github.io/scale" target='_blank'>hihayk.github.io/scale</a>
+              <br>
+              <a href="https://hihayk.github.io/modulator" target='_blank'>hihayk.github.io/modulator</a>
+              <br>
+              More projects in Github: <a href="https://github.com/hihayk" target='_blank'>github.com/hihayk</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="pagebreak"></div>
+
+    <div class="section">
+      <div class="layout">
+        <div class="layout-right">
+          <h2 class="section-title">
+            Experience
+          </h2>
+          <h3 class="subsection-title">
+            freelance projects
+          </h3>
+        </div>
+      </div>
+      
+      <div class="project-section">
+        <div class="layout">
+          <div class="layout-right">
+            <p>
+              I have been instructing CSS&HTML classes at Ironhack bootcamp.
+              <br>
+              <br>
+              I have been working on freelance projects since 2010, these are some of the clients:
+              <br>
+              Wearisma / InMotion / Luzea & Icsam / Impuls / Angla Boutique / Neonized / Mr Lopez
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="section">
+      <div class="layout">
+        <div class="layout-right">
+          <h2 class="section-title">
+            Skills
+          </h2>
+          <h3 class="subsection-title">
+            design & code
+          </h3>
+        </div>
+      </div>
+      
+      <div class="project-section">
+        <div class="layout">
+          <div class="layout-right">
+            <p>
+              Besides the traditional design tools I like to use code to design. Lately I have been developing using React working closely with front-end developers.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="section">
+      <div class="layout">
+        <div class="layout-right">
+          <h2 class="section-title">
+            Skills
+          </h2>
+          <h3 class="subsection-title">
+            video & animation
+          </h3>
+        </div>
+      </div>
+      
+      <div class="project-section">
+        <div class="layout">
+          <div class="layout-right">
+            <p>
+              I produce motion graphics with After Effects and occasionally do visual performances with musicians.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="section">
+      <div class="layout">
+        <div class="layout-right">
+          <h2 class="section-title">
+            Skills
+          </h2>
+          <h3 class="subsection-title">
+            music production
+          </h3>
+        </div>
+      </div>
+      
+      <div class="project-section">
+        <div class="layout">
+          <div class="layout-right">
+            <p>
+              Whenever I'm not designing I’m making music. I have been releasing music since 2006, performing live in festivals like Sonar and I participated in Red Bull Music Academy.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="section">
+      <div class="layout">
+        <div class="layout-right">
+          <h2 class="section-title">
+            Skills
+          </h2>
+          <h3 class="subsection-title">
+            communication
+          </h3>
+        </div>
+      </div>
+      
+      <div class="project-section">
+        <div class="layout">
+          <div class="layout-right">
+            <p>
+              I like teaching design and code.
+              <br>
+              I speak english, spanish, russian, armenian and catalan.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pagebreak"></div>
+
+    <div class="section">
+      Thank you.
+    </div>
+
+  </body>
+</html>
