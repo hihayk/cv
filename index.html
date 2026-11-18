@@ -13,8 +13,8 @@
 
       :root {
         --space-sm: 16px;
-        --space-md: 32px;
-        --space-lg: 64px;
+        --space-md: 24px;
+        --space-lg: 48px;
 
         --fontSize-N1: 12px;
         --lineHeight-N1: 16px;
@@ -25,7 +25,7 @@
         --fontSize-1: 24px;
         --lineHeight-1: 32px;
         
-        --dimmed: 0.6;
+        --dimmed: 0.8;
       }
 
       * {
@@ -47,7 +47,7 @@
         font-size: var(--fontSize-0);
         line-height: var(--lineHeight-0);
         font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-        color: #444;
+        color: #141414;
       }
       @media screen and (max-width: 720px) {
         body {
@@ -68,7 +68,7 @@
         font-size: var(--fontSize-0);
         line-height: var(--lineHeight-0);
       }
-      .subsection-title {
+      h1, .subsection-title {
         font-size: var(--fontSize-1);
         line-height: var(--lineHeight-1);
       }
@@ -76,6 +76,9 @@
         display: grid;
         grid-template-columns: 128px auto;
         grid-gap: var(--space-md) 0px;
+      }
+      .project-title {
+        font-weight: 600;
       }
       @media screen and (max-width: 720px) {
         .layout {
@@ -113,10 +116,11 @@
         line-height: var(--lineHeight-N1);
         letter-spacing: .05em;
       }
-      .project-description {
+      .project-position {
         opacity: var(--dimmed);
       }
-      .project-role {
+      
+      .year {
         opacity: var(--dimmed);
       }
 
@@ -130,8 +134,7 @@
           CV &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/
         </div>
         <div class="layout-right">
-          <b>Hayk Ananyan</b>
-          <br>
+          <h1>Hayk Ananyan</h1>
           <br>
           <p>
             Born 14.11.1990 in Yerevan, Armenia.
@@ -144,9 +147,9 @@
             modular product design and development.
             <br>
             <br>
-            say@hihayk.com
+            hayk@hayk.design
             <br>
-            hihayk.com
+            <a href="https://hayk.design" target='_blank'>hayk.design</a>
           </p>
         </div>
       </div>
@@ -169,104 +172,114 @@
       <div class="project-section">
         <div class="layout">
           <div class="layout-left">
-            <p>
-              2017 <br class='hide-sm'> — present
+            <p class="year">
+              2022 – <br class='hide-sm'>2026
+            </p>
+          </div>
+          <div class="layout-right">
+            <p class="project-title">
+              Flodesk
+            </p> 
+            <p class="project-position">
+              Design systems lead and director, design engineer
+            </p>
+          </div>
+          
+          <div class="layout-left">
+            <p class="year">
+              2019 – <br class='hide-sm'>2022
+            </p>
+          </div>
+          <div class="layout-right">
+            <p class="project-title">
+              Loom (Atlassian)
+            </p>
+            <p class="project-position">
+              Design systems lead, design engineer
+            </p>
+          </div>
+
+          <div class="layout-left">
+            <p class="year">
+              2017 – <br class='hide-sm'>2019
             </p>
           </div>
           <div class="layout-right">
             <p class="project-title">
               Typeform
             </p>
-            <p class="project-description">
-              Conversational forms
-            </p>
-            <p class="project-role">
-              design systems / product design / front-end
+            <p class="project-position">
+              Design systems lead, product designer, design engineer
             </p>
           </div>
 
           <div class="layout-left">
-            <p>
-              2016 <br class='hide-sm'> — 2017
+            <p class="year">
+              2016 – <br class='hide-sm'>2017
             </p>
           </div>
           <div class="layout-right">
             <p class="project-title">
-              Travelperk
+              Travelperk (Perk)
             </p>
-            <p class="project-description">
-              Business travel webapp
-            </p>
-            <p class="project-role">
-              design systems / product design / front-end
+            <p class="project-position">
+              Design systems lead, product designer, design engineer
             </p>
           </div>
 
           <div class="layout-left">
-            <p>
-              2014 <br class='hide-sm'> — 2016
+            <p class="year">
+              2014 – <br class='hide-sm'>2016
             </p>
           </div>
           <div class="layout-right">
             <p class="project-title">
-              Quipu
+              Quipu (TeamSystem)
             </p>
-            <p class="project-description">
-              Accounting webapp
-            </p>
-            <p class="project-role">
-              product design / front-end
+            <p class="project-position">
+              Product design lead, design engineer
             </p>
           </div>
 
           <div class="layout-left">
-            <p>
+            <p class="year">
               2016
             </p>
           </div>
           <div class="layout-right">
             <p class="project-title">
-              Ironhack
+              Ironhack Bootcamp
             </p>
-            <p class="project-description">
-              Coding Bootcamp
-            </p>
-            <p class="project-role">
-              front-end course instructor
+            <p class="project-position">
+              Frontend teacher
             </p>
           </div>
 
           <div class="layout-left">
-            <p>
-              2011 <br class='hide-sm'> — 2014
+            <p class="year">
+              2011 – <br class='hide-sm'>2014
             </p>
           </div>
           <div class="layout-right">
             <p class="project-title">
               Digital Road
             </p>
-            <p class="project-description">
-              Web and product design agency
-            </p>
-            <p class="project-role">
-              art direction / web design / front-end
+            <p class="project-position">
+              Web designer
             </p>
           </div>
 
           <div class="layout-left">
-            <p>
-              2009 <br class='hide-sm'> — 2011
+            <p class="year">
+              2009 – <br class='hide-sm'>2011
             </p>
           </div>
           <div class="layout-right">
             <p class="project-title">
               Publlart
             </p>
-            <p class="project-description">
-              Small print shop
-            </p>
-            <p class="project-role">
-              graphic design / print
+            <p class="project-position">
+              Graphic designer
             </p>
           </div>
         </div>
@@ -280,7 +293,7 @@
             Experience
           </h2>
           <h3 class="subsection-title">
-            personal projects
+            personal and freelance projects
           </h3>
         </div>
       </div>
@@ -289,53 +302,26 @@
         <div class="layout">
           <div class="layout-right">
             <p>
-              I spend a lot of time working on side projects that help me to learn and experiment.
-              <br>
+              Big part of my work and learning comes from personal and freelance projects. 
+            </p>
+            <p>
+              Most of my personal projects are focused on creating design tooling that take advantage of the dynamic nature and possibilities of code instead of the traditional static drawing based approaches.
+            </p>
+            <p>
               Here are some of my latest projects:
-              <br>
-              <a href="https://hihayk.github.io/scale" target='_blank'>hihayk.github.io/scale</a>
-              <br>
-              <a href="https://hihayk.github.io/modulator" target='_blank'>hihayk.github.io/modulator</a>
-              <br>
-              More projects in Github: <a href="https://github.com/hihayk" target='_blank'>github.com/hihayk</a>
             </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="pagebreak"></div>
-
-    <div class="section">
-      <div class="layout">
-        <div class="layout-right">
-          <h2 class="section-title">
-            Experience
-          </h2>
-          <h3 class="subsection-title">
-            freelance projects
-          </h3>
-        </div>
-      </div>
-      
-      <div class="project-section">
-        <div class="layout">
-          <div class="layout-right">
             <p>
-              I have been instructing CSS&HTML classes at Ironhack bootcamp.
-              <br>
-              <br>
-              I have been working on freelance projects since 2010, these are some of the clients:
-              <br>
-              Wearisma / InMotion / Luzea & Icsam / Impuls / Angla Boutique / Neonized / Mr Lopez
+              <a href="https://hihayk.github.io/" target='_blank'>hihayk.github.io</a>
             </p>
           </div>
         </div>
       </div>
     </div>
+
+
+    <!-- <div class="pagebreak"></div> -->
     
-    <div class="section">
+    <!-- <div class="section">
       <div class="layout">
         <div class="layout-right">
           <h2 class="section-title">
@@ -356,9 +342,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     
-    <div class="section">
+    <!-- <div class="section">
       <div class="layout">
         <div class="layout-right">
           <h2 class="section-title">
@@ -402,7 +388,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     
     <div class="section">
       <div class="layout">
@@ -420,8 +406,6 @@
         <div class="layout">
           <div class="layout-right">
             <p>
-              I like teaching design and code.
-              <br>
               I speak english, spanish, russian, armenian and catalan.
             </p>
           </div>
